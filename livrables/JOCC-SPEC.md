@@ -24,28 +24,26 @@ ce sera certe gourmand en bandwith mais on facilite l'extension du protocol.
 
 La syntaxe global du protocol stateless
 
-2.1 #### HELLO: 
+#### 2.1  HELLO: 
 
 Liste les commandes disponibles du serveur
 
-2.2 #### SEND  <JOKE> USER  [TYPE]   :
+#### 2.2  SEND  "joke" USER  [TYPE]  
 Ce message transmet au serveur une blague l'utilisateur dois renseigner son nom mais peux aussi donner un type de blague faculatif
 
-2.3 #### GETJOOC [TOP] [LATEST]
+#### 2.3  GETJOOC [TOP] [LATEST]
 Permet au client de recuperer les blagues du serveur, en spécifiant TOP il récupère les mieux noté et avec LATEST les blagues les plus récentes. 
 
 __format de la réponse :__
 ```
 idBlague | note | Blague | type | author
 ```
-
-2.4 #### EVAL idBlague [UP | DOWN]
+#### 2.4  EVAL idBlague [UP | DOWN]
 Permet l'évaluation des blagues UP pour augementer la note et DOWN pour la faire baisser
 
-2.5 GETMEMBER [MOST | BEST]
+#### 2.5 GETMEMBER [MOST | BEST]
 
 Rend les mebre ayant le plus soumis de blague (MOST) ou les membre ayant soumis les meilleurs blagues (BEST)
 
 ## Remarques
 
-Si vous avez des choses à partager au sujet de l'exercice, utilisez cette dernière section.
