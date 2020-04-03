@@ -74,7 +74,7 @@ SENDJOCC
 STOP
 C: SENDJOCC utiliser UDP pour éviter les handshake USER sacha TYPE Blague geek STOP
 S:[OK]
-C: CLOSE
+C: CLOSE STOP
 S: ferme la connexion
 
 ```
